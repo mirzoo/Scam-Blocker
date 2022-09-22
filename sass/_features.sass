@@ -1,0 +1,54 @@
+.features
+    &-title
+        font-size: 28px
+        font-weight: 900
+        text-align: center
+    &-wrap
+        flex-direction: column
+        padding: 0px 16px
+    &-item
+        margin-top: 40px
+        margin-bottom: 60px
+        display: flex
+        align-content: center
+        align-items: center
+        justify-content: space-between
+
+        &__title
+            color: #FFFFFF
+            font-size: 24px
+            font-weight: 700
+        &__subtitle
+            color: #A8A8A8
+            font-size: 22px
+            font-weight: 400
+            line-height: 25px
+            width: 390px
+
+
+@media (max-width: 1024px)
+    .features
+        &-content
+            &__img
+                width: 445px
+        &-text
+            align-items: flex-end
+
+@media (max-width: 768px)
+    .features
+        &-item
+            flex-direction: column
+            text-align: center
+            margin-top: 60px
+            &__text
+                order: 2
+            &__img
+                margin-bottom: 24px
+                order: -1
+
+@media (max-width: 425px)
+    .features
+        &-item
+            &__subtitle
+                font-size: 18px
+                width: 300px
